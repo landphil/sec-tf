@@ -3,7 +3,7 @@ provider "aws" {
 
   default_tags {
     tags = {
-      TF_Product  = "tf_setup"
+      TF_Product  = "aws_init_setup"
       Terraform   = "true"
     }
   }
