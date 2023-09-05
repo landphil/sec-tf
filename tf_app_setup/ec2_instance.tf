@@ -9,7 +9,7 @@ module "ec2_instance" {
   iam_instance_profile        = aws_iam_instance_profile.ssm_access.name
   key_name                    = "phil-ec2-nva"
   monitoring                  = false
-  vpc_security_group_ids      = [aws_security_group.ec2_public_webserver_ingress.id]
+  vpc_security_group_ids      = [aws_security_group.ec2_public_webserver_ingress.id, aws_security_group.ec2_public_ssh_ingress.id]
   associate_public_ip_address = true
   subnet_id                   = random_shuffle.vpc_subnet.result[0]
   user_data_replace_on_change = true
