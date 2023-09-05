@@ -15,7 +15,9 @@ environment variables in the shell running Terraform or through credentials stor
 
 See https://docs.aws.amazon.com/cli/v1/userguide/cli-chap-authentication.html for details on credential setup.
 
-To bypass the credential setup, these Terraform modules may be run from an admin user's CloudShell using these commands to set everything up (first, launch your CloudShell):
+For quick Terraform installation instructions for most environments, see https://developer.hashicorp.com/terraform/downloads
+
+To bypass the credential setup, these Terraform modules may be run from an admin user's CloudShell using the following commands to set everything up (first, launch your CloudShell):
 
 ```
 mkdir ~/bin
