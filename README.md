@@ -4,6 +4,7 @@
 This repository contains two Terraform module directories
 1. `aws_init_setup`: Sets up an S3 bucket and DynamoDB table to save and lock the Terraform state. **This must be set up before running any of the other Terraform modules**
 2. `tf_app_setup`: Sets up AWS infrastructure for a VPC containing an EC2 instance running an Nginx Web server.
+
 For details on running each of the modules, see the `README.md` files in the module directories.
 ### General Terraform and AWS Instructions
 These Terraform modules were built using Terraform v1.5.6 and the AWS provider v5.0. **The modules must be run by a user or role with administrative credentials**
