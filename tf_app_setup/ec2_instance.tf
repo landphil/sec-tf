@@ -7,7 +7,7 @@ module "ec2_instance" {
   ami                         = data.aws_ami.latest_amz_linux.id
   instance_type               = "t2.micro"
   iam_instance_profile        = aws_iam_instance_profile.ssm_access.name
-  key_name                    = "phil-ec2-nva"
+  key_name                    = var.key_name
   monitoring                  = false
   vpc_security_group_ids      = [aws_security_group.ec2_public_webserver_ingress.id, aws_security_group.ec2_public_ssh_ingress.id]
   associate_public_ip_address = true

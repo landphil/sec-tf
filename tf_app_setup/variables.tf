@@ -5,7 +5,13 @@ variable "aws_region" {
 }
 
 variable "ssh_access_cidr" {
-  description = "Region to deploy infrastructure"
+  description = "Allowed source IP addresses for SSH access to the webserver instance"
   type        = list
   default     = ["76.209.242.132/32"]
+}
+
+variable "key_name" {
+  description = "EC2 Keypair for SSH access to the instance"
+  type        = string
+  default     = "phil-ec2-nva"
 }
