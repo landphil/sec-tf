@@ -50,9 +50,13 @@ Once `terraform apply` has completed, it will return the output value `webserver
 
 So, if the output is:
 ```
-webserver_public_ip = "18.232.75.16"
+Apply complete! Resources: 26 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+webserver_public_ip = "3.84.140.161"
 ```
-navigate to `http://18.232.75.16`
+navigate to `http://3.84.140.161`
 
 The page content should be:
 
